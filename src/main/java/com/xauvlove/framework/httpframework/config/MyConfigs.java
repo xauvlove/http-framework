@@ -1,0 +1,25 @@
+
+package com.xauvlove.framework.httpframework.config;
+
+
+import com.xauvlove.framework.httpframework.components.MyFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import java.util.ArrayList;
+import java.util.List;
+
+@Configuration
+public class MyConfigs {
+
+    @Bean
+    public FilterRegistrationBean filterRegistrationBean() {
+        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
+        filterRegistrationBean.setFilter(new MyFilter());
+        List<String> urls = new ArrayList<>();
+        urls.add("/test/*");
+        filterRegistrationBean.setUrlPatterns(urls);
+        return filterRegistrationBean;
+    }
+}
+
