@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-public class MyConfigs {
+public class AppConfigs {
 
     @Bean
-    public FilterRegistrationBean filterRegistrationBean() {
-        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
+    public FilterRegistrationBean<MyFilter> filterRegistrationBean() {
+        FilterRegistrationBean<MyFilter> filterRegistrationBean = new FilterRegistrationBean<>();
         filterRegistrationBean.setFilter(new MyFilter());
         List<String> urls = new ArrayList<>();
         urls.add("/test/*");

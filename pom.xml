@@ -26,14 +26,14 @@
         </dependency>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
         </dependency>
 
         <dependency>
-            <groupId>tomcat</groupId>
-            <artifactId>catalina</artifactId>
-            <version>8.1.43</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <dependency>

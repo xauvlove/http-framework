@@ -22,6 +22,4 @@ public class WebComponentsConfig extends WebMvcConfigurationSupport {
         argumentResolvers.add(new UserParameterResolver());
         super.addArgumentResolvers(argumentResolvers);
     }
-
-
 }
